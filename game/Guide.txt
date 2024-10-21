@@ -1,0 +1,192 @@
+  /*
+  Formatting guide:
+  
+    New <page>
+      || attr="val"
+      <div>Tags will be appended to the page, until a text starts</div>
+  
+    Start new <text>
+      -- Can be followed by contents
+      Each new line after this starts a new paragraph.
+      <button>Any line that starts with a tag won't be wrapped in a paragraph.</button>
+      `Natalie This text will be quoted in Natalie's colors`
+  
+      Extra new lines will be ignored.
+      -- After a text has started in a page, any following texts will keep the current background / character art.
+  
+    Start full <text>
+      --|
+  
+    Continue last <text>
+      -->
+  
+    Quote text:
+    `D quoted text` transforms to <q class="D">quoted text</q>
+   */
+
+
+
+  /*
+     Pesanmu disini seharusnya tidak terbaca...
+   */
+
+
+
+
+Yang Aku Edit...
+=====
+(function() {
+  var DarkLady, Liana, Alice
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Object.defineProperty(window, 'D', {
+    get: (function() {
+      return g.people.DarkLady;
+    })
+  });
+
+  Game.prototype.people.DarkLady = add(DarkLady = (function(superClass) {
+    extend(DarkLady, superClass);
+
+    function DarkLady() {
+      return DarkLady.__super__.constructor.apply(this, arguments);
+    }
+
+    DarkLady.prototype.key = 'DarkLady';
+
+    DarkLady.prototype.name = 'Dark Lady';
+
+    DarkLady.prototype.gender = 'f';
+
+    DarkLady.prototype.strength = 1;
+
+    DarkLady.prototype.magic = 15;
+
+    DarkLady.prototype.intelligence = 55;
+
+    DarkLady.prototype.lust = 50;
+
+    DarkLady.prototype.image = 'misc/DarkLady';
+
+    DarkLady.prototype.description = function() {
+      return "It's me. I'm going to take over the world.";
+    };
+
+    DarkLady.prototype.max = new Collection({
+      strength: 100,
+      magic: 30,
+      intelligence: 100,
+      lust: 100
+    });
+
+    return DarkLady;
+
+  })(Person));
+
+  Object.defineProperty(window, 'L', {
+    get: (function() {
+      return g.people.Liana;
+    })
+  });
+
+  Game.prototype.people.Liana = add(Liana = (function(superClass) {
+    extend(Liana, superClass);
+
+    function Liana() {
+      return Liana.__super__.constructor.apply(this, arguments);
+    }
+
+    Liana.prototype.name = 'Liana';
+
+    Liana.prototype.gender = 'f';
+
+    Liana.prototype.strength = 15;
+
+    Liana.prototype.magic = 30;
+
+    Liana.prototype.intelligence = 50;
+
+    Liana.prototype.lust = 25;
+
+    Liana.prototype.image = 'Liana/Happy';
+
+    Liana.prototype.description = function() {
+      return "Fucktoy #1. Quite a powerful mage, and my first lieutenant. She was kicked out of university for cheating on a test, and decided to \"show them all\" by summoning me. Also my favorite human, though don't tell her I said so.";
+    };
+
+    Liana.prototype.max = new Collection({
+      strength: 40,
+      magic: 50,
+      intelligence: 100,
+      lust: 100
+    });
+
+    return Liana;
+
+
+  })(Person));
+
+  Object.defineProperty(window, 'A', {
+    get: (function() {
+      return g.people.Alice;
+    })
+  });
+
+  Game.prototype.people.Alice = add(Alice= (function(superClass) {
+    extend(Alice, superClass);
+
+    function Alice() {
+      return Alice.__super__.constructor.apply(this, arguments);
+    }
+
+    Alice.prototype.name = 'Alice';
+
+    Alice.prototype.gender = 'f';
+
+    Alice.prototype.strength = 100;
+
+    Alice.prototype.magic = 100;
+
+    Alice.prototype.intelligence = 100;
+
+    Alice.prototype.lust = 100;
+
+    Alice.prototype.image = 'Alice/Alice';
+
+    Alice.prototype.description = function() {
+      return "A Fully functioning Love Doll, gifted by C.E.L.L. Corp as welcome gift for me. She once human, but thanks to unknown method, she finally abandoned that long time ago (which i asked, and she reply with \"classified\"). I hope i could find its creator, we might get along...";
+    };
+
+    Alice.prototype.max = new Collection({
+      strength: 100,
+      magic: 100,
+      intelligence: 100,
+      lust: 100
+    });
+
+    return Alice;
+
+  })(Person));
+
+
+}).call(this);
+
+
+
+
+========================================================================================================================
+(function() {
+  var Fire, HolidayInn, LianaConcrete, LianaConcrete1, LianaConcrete2, LianaConcrete3, LianaConcrete4, Raid, Raid1, Raid2, Raid3, Raid4, Raid5, Rest, Rest1, Rest2, Rest3, Rest4, Rest5, TheEnd, VisitGym, burnChoices,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+//
+jadi
+//
+
+(function() {
+  var Fire, HolidayInn, LianaConcrete, LianaConcrete1, LianaConcrete2, LianaConcrete3, LianaConcrete4, Raid, Raid1, Raid2, Raid3, Raid4, Raid5, Rest, Rest1, Rest2, Rest3, Rest4, Rest5, TheEnd, VisitGym, burnChoices, Alicejob, Alicejob1, Alicejob2,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+

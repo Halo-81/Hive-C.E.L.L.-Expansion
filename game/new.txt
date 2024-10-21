@@ -1,0 +1,137 @@
+  whoreDepravity = function(context) {
+    var lust, ref, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9;
+    lust = (((ref = context.w1) != null ? ref.lust : void 0) || 0) + (((ref1 = context.w2) != null ? ref1.lust : void 0) || 0) + (((ref2 = context.w3) != null ? ref2.lust : void 0) || 0) + (((ref3 = context.w4) != null ? ref3.lust : void 0) || 0) + (((ref4 = context.w5) != null ? ref4.lust : void 0) || 0) + (((ref5 = context.w6) != null ? ref5.lust : void 0) || 0) + (((ref6 = context.w7) != null ? ref6.lust : void 0) || 0) + (((ref7 = context.w8) != null ? ref7.lust : void 0) || 0) + (((ref8 = context.w9) != null ? ref8.lust : void 0) || 0);
+    return Math.floor(lust / 6);
+  };
+
+
+================================================================================================================================================
+
+  add(Whore = (function(superClass) {
+    extend(Whore, superClass);
+
+    function Whore() {
+      return Whore.__super__.constructor.apply(this, arguments);
+    }
+
+    Whore.prototype.place = 'Sycamore';
+
+    Whore.prototype.conditions = {
+      '|events|SexSlave': {}
+    };
+
+    Whore.prototype.type = 'boring';
+
+    Whore.prototype.label = 'Prostitution';
+
+    Whore.prototype.text = function() {
+      return "Sycamore Street isn't the nicest part of town, so one of my sluts selling her body won't be that unusual of a sight.\n Of Course, i dont want to. And we cant use Cumdumpsters either, since they have no rent value. So either Liana, Sex Slave, my imps, or my pets.\n\n<em><span class=\"depravity\">+" + (whoreDepravity(this.context)) + "</span>, <span class=\"resistance\">+1</span></em>";
+    };
+
+    Whore.prototype.people = {
+      pimp: {
+        label: function() {
+          if (g.events.Succubi) {
+            return 'Domme, Sadist or Succubus';
+          } else {
+            return 'Domme or Sadist';
+          }
+        },
+        is: [Person.Domme, Person.Sadist, Person.Succubus]
+      },
+      w1: {
+        label: function() {
+          return 'Slut';
+        },
+        is: [Person.SexSlave, Person.Liana, Person.ManWhore, Person.Catgirl, Person.Catboy, Person.Succubus]
+      },
+      w2: {
+        label: function() {
+          return 'Slut';
+        },
+        is: [Person.SexSlave, Person.Liana, Person.ManWhore, Person.Catgirl, Person.Catboy, Person.Succubus],
+        optional: true
+      },
+      w3: {
+        label: function() {
+          return 'Slut';
+        },
+        is: [Person.SexSlave, Person.Liana, Person.ManWhore, Person.Catgirl, Person.Catboy, Person.Succubus],
+        optional: true
+      },
+      w4: {
+        label: function() {
+          return 'Slut';
+        },
+        is: [Person.SexSlave, Person.Liana, Person.ManWhore, Person.Catgirl, Person.Catboy, Person.Succubus],
+        optional: true
+      },
+      w5: {
+        label: function() {
+          return 'Slut';
+        },
+        is: [Person.SexSlave, Person.Liana, Person.ManWhore, Person.Catgirl, Person.Catboy, Person.Succubus],
+        optional: true
+      }
+    };
+
+    return Whore;
+
+  })(Job));
+
+  add(Whore = (function(superClass) {
+    extend(Whore, superClass);
+
+    function Whore() {
+      return Whore.__super__.constructor.apply(this, arguments);
+    }
+
+    Whore.prototype.conditions = {
+      depravity: {
+        fill: function() {
+          return whoreDepravity(g.last.context);
+        }
+      },
+      w1: {},
+      pimp: {}
+    };
+
+    Whore.prototype.text = function() {
+      var c, inof;
+      if ($('page').length && Math.random() < 0.75) {
+        return false;
+      }
+      c = [];
+      inof = (function(_this) {
+        return function(cl) {
+          return _this.w1 instanceof cl || _this.w2 instanceof cl || _this.w3 instanceof cl;
+        };
+      })(this);
+      if (inof(Person.SexSlave)) {
+        c.push.apply(c, ["|| bg=\"Sycamore/Whore1\"\n-- Condoms are sexy! He lasts longer, she doesn't waste my magic needing to be cured of diseases.", "|| bg=\"Sycamore/Whore2\"\n-- He was a little rough, but she took her pounding like a champ. As high earner for the month, she deserves a reward - if I remember tomorrow, I'll make Liana serve her for a few hours.", "|| bg=\"Sycamore/Whore3\"\n-- \"That's a good little slut. You like it and you hate the way it lets me see what you really want. Go on, tell me to stop if that's what you're actually thinking...\"\n--> He's a bit corny, but, well, as long as he's paying she's hardly in a position to complain.", "|| bg=\"Sycamore/Whore4\"\n-- Some girls go in for a more cute and innocent look. Works pretty well, especially when their clients learn they're not wearing underwear.", "|| bg=\"Sycamore/Whore5\"\n-- Whore. She won't even open her mouth until he's ready to shove a cock in it.", "|| bg=\"Sycamore/Whore6\"\n-- " + this.pimp + " gets a call from a guy we've seen before. He wants our girl to 'bring extra condoms this time.' Looks like she's in for a long night."]);
+      }
+      if (inof(Person.Liana)) {
+        c.push.apply(c, ["|| bg=\"Liana/Whore1\"\n  -- While it's true that I've corrupted Liana to some extent, she somehow retains a core of purity and joy that perhaps I <em>could</em> touch, but really have no desire to. She's a powerful mage, a feisty temptress, smart and loyal and... I must be coming down with something.\n||\n  --> Snapping the scrying window closed, I order someone to bring me a cup of pineapple juice, a butt plug and a hole to put it in. I'm supposed to be taking over the world, not feeling jealous of some mere human about to fuck her senseless.\n  -->", "|| bg=\"Liana/Whore21\"\n|| bg=\"Liana/Whore22\"\n|| bg=\"Liana/Whore23\"\n|| bg=\"Liana/Whore23\"\n  -- \"Wow that went in easy. You have lots of experience?\"\n  `L That's a myth. It went in easy because I'm turned on.`\n  \"Oh. Well, you're a slut either way.\"\n  -->"]);
+      }
+      if (inof(Person.ManWhore)) {
+        c.push.apply(c, ["|| bg=\"Sycamore/WhoreMale1\"\n-- Tempting as it is to grab her for my own collection, any woman who's going to pay a man off the street for sex is a woman too valuable to just throw in a cell and brainwash.", "|| bg=\"Sycamore/WhoreMale2\"\n-- ", "|| bg=\"Sycamore/WhoreMale3\"\n-- Seriously, what sort of guy just carries a leash and collar in his pocket, in case he happens to stumble across some casual sex?\n--> The awesome kind, clearly.", "|| bg=\"Sycamore/WhoreMale4\"\n-- Busy day at the office, but still want to fuck? Call Dark Lady's Escorts now. We deliver."]);
+      }
+      if (inof(Person.Catgirl)) {
+        c.push.apply(c, ["|| bg=\"Sycamore/WhoreCatgirl1\"\n-- ` Heh. Do I want to do what to the bunny? For $100? I'd do that for free. Heheh. She'll never know what hit her.`", "|| bg=\"Sycamore/WhoreCatgirl2\"\n-- ` Mrrrow! So shiny. Want.`", "|| bg=\"Sycamore/WhoreCatgirl3\"\n-- Come on boy, can't you see she's distracted. You'll have to grab her head and facefuck it if you want that cock in her mouth."]);
+      }
+      if (inof(Person.Catboy)) {
+        c.push.apply(c, ["|| bg=\"Sycamore/WhoreCatboy1\"\n-- Good kitty, just keep purring."]);
+      }
+      return "|| class=\"jobStart\" auto=\"1800\"\n  <h4>Prostitution</h4>\n" + (Math.choice(c)) + "\n  <em><span class=\"depravity\">+" + this.depravity + "</span>, <span class=\"resistance\">+1</span></em>";
+    };
+
+    Whore.prototype.effects = {
+      depravity: 'depravity',
+      resistance: 1
+    };
+
+    return Whore;
+
+  })(Page));
+
+}).call(this);

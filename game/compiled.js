@@ -9449,6 +9449,19 @@
 
   })(Page.Tunnel));
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   whoreDepravity = function(context) {
     var lust, ref, ref1, ref2, ref3, ref4;
     lust = (((ref = context.w1) != null ? ref.lust : void 0) || 0) + (((ref1 = context.w2) != null ? ref1.lust : void 0) || 0) + (((ref2 = context.w3) != null ? ref2.lust : void 0) || 0) + (((ref3 = context.w4) != null ? ref3.lust : void 0) || 0) + (((ref4 = context.w5) != null ? ref4.lust : void 0) || 0);

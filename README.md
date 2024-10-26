@@ -1,6 +1,6 @@
 # Hive-C.E.L.L.-Expansion
 How To Download?
-  Click  > Save as .Zip
+  Click  [<> Code] and choose Download as Zip
 
 Edit;
 - Change Prostitution slut room from 3 to 5

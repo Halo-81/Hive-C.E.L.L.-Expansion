@@ -1,4 +1,7 @@
 # Hive-C.E.L.L.-Expansion
+How To Download?
+  Click  > Save as .Zip
+
 Edit;
 - Change Prostitution slut room from 3 to 5
 - Allowing Liana to Spawning Pit Job
